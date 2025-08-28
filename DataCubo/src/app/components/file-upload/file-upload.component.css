@@ -1,0 +1,41 @@
+/* Testes */
+.file-input-wrapper {
+  display: flex;
+  align-items: center;
+  width: 800px;              /* Largura maior */
+  height: 55px;              /* Altura maior */
+  border: 2px solid #ccc;
+  border-radius: 50px;       /* Bordas completamente arredondadas */
+  overflow: hidden;           /* Garante que o botão e input não ultrapassem bordas */
+  background-color: #fff;
+}
+
+.file-input-wrapper input[type="text"] {
+  flex: 1;
+  border: none;
+  padding: 0 20px;
+  font-size: 16px;
+  outline: none;
+}
+
+.file-input-wrapper .btn-file {
+  height: 100%;
+  width: 55px;
+  border: none;
+  background-color: #d0f6e4;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s;
+}
+
+.file-input-wrapper .btn-file:hover {
+  background-color: #a5e0c3;
+}
+
+.file-input-wrapper input[type="file"] {
+  display: none; /* input real escondido */
+}
