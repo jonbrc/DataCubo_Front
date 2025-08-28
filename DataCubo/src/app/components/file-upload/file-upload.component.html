@@ -1,7 +1,14 @@
-<div class="file-input-wrapper">
-  <input type="text" placeholder="Escolha um arquivo..." readonly [value]="fileName">
-  <button type="button" class="btn-file" (click)="fileInput.click()">
-    🔍
+<div class="container">
+  <div class="file-input-wrapper">
+    <input type="text" placeholder="Escolha um arquivo..." readonly [value]="fileName">
+    <button type="button" class="btn-file" (click)="fileInput.click()">
+      🔍
+    </button>
+    <input type="file" #fileInput (change)="onFileSelected($event)" hidden>
+  </div>
+  
+  <!-- Botão Enviar centralizado -->
+  <button class="btn-enviar" (click)="clickBotao()">
+    Enviar
   </button>
-  <input type="file" #fileInput (change)="onFileSelected($event)" hidden>
 </div>

@@ -15,5 +15,9 @@ export class FileUploadComponent {
       this.fileName = event.target.files[0].name;
     }
   }
+
+  clickBotao(){
+    alert('ok');
+  }
 }
 
